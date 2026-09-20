@@ -54,72 +54,48 @@ SudokuSolverWeb
 │       ├── java
 │       │   ├── com.sudoku.sudokusolver
 │       │   │   └── SudokuSolverWebApplication.java
-│       │   │
 │       │   ├── controller
 │       │   │   ├── HomeController.java
 │       │   │   └── SudokuController.java
-│       │   │
 │       │   └── solver
 │       │       └── SudokuSolver.java
-│       │
 │       └── resources
 │           ├── static
 │           │   ├── style.css
 │           │   └── script.js
-│           │
 │           └── templates
 │               └── index.html
-│
 ├── pom.xml
 ├── README.md
 └── .gitignore
+```
 
-🔄 Application Flow
+## ▶️ How to Run
 
-User
-  ↓
-Sudoku Web Interface
-  ↓
-JavaScript
-  ↓
-Spring Boot REST API
-  ↓
-SudokuController
-  ↓
-SudokuSolver
-  ↓
-Backtracking Algorithm
-  ↓
-Solved Sudoku
-  ↓
-Web Interface
+### Prerequisites
 
-▶️ How to Run
+- Java JDK
+- IntelliJ IDEA
+- Maven
 
-Prerequisites
+### Steps
 
-• Java JDK
-• IntelliJ IDEA
-• Maven
+1. Clone the repository.
+2. Open the project in IntelliJ IDEA.
+3. Allow Maven dependencies to load.
+4. Run `SudokuSolverWebApplication`.
+5. Open `http://localhost:8080` in a web browser.
+6. Load an example or enter your own Sudoku puzzle.
+7. Click **Solve Sudoku**.
 
-Steps
-
-1.Clone the repository.
-2.Open the project in IntelliJ IDEA.
-3.Allow Maven dependencies to load.
-4.Run SudokuSolverWebApplication.
-5.Open http://localhost:8080 in a web browser.
-6.Load an example or enter your own Sudoku puzzle.
-7.Click Solve Sudoku.
-
-🔍 Validation
+## 🔍 Validation
 
 The application validates the Sudoku before sending it to the backend.
 
 It checks:
 
-• Rows
-• Columns
-• 3×3 boxes
+- Rows
+- Columns
+- 3×3 boxes
 
 Invalid puzzles display an appropriate validation message.
