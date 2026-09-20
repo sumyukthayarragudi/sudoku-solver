@@ -33,7 +33,7 @@ The application solves Sudoku puzzles using the Backtracking algorithm and provi
 
 ## 🧠 Algorithm
 
-The application uses the Backtracking Algorithm to solve Sudoku.
+The application uses the **Backtracking Algorithm** to solve Sudoku.
 
 The algorithm:
 
@@ -73,55 +73,53 @@ SudokuSolverWeb
 ├── pom.xml
 ├── README.md
 └── .gitignore
-```
-```
-## 🔄 Application Flow
+
+🔄 Application Flow
 
 User
-↓
+  ↓
 Sudoku Web Interface
-↓
+  ↓
 JavaScript
-↓
+  ↓
 Spring Boot REST API
-↓
+  ↓
 SudokuController
-↓
+  ↓
 SudokuSolver
-↓
+  ↓
 Backtracking Algorithm
-↓
+  ↓
 Solved Sudoku
-↓
+  ↓
 Web Interface
-```
 
-## ▶️ How to Run
+▶️ How to Run
 
-### Prerequisites
+Prerequisites
 
-- Java JDK
-- IntelliJ IDEA
-- Maven
+• Java JDK
+• IntelliJ IDEA
+• Maven
 
-### Steps
+Steps
 
-1. Clone the repository.
-2. Open the project in IntelliJ IDEA.
-3. Allow Maven dependencies to load.
-4. Run `SudokuSolverWebApplication`.
-5. Open http://localhost:8080
-6. Load an example or enter your own Sudoku puzzle.
-7. Click Solve Sudoku.
+1.Clone the repository.
+2.Open the project in IntelliJ IDEA.
+3.Allow Maven dependencies to load.
+4.Run SudokuSolverWebApplication.
+5.Open http://localhost:8080 in a web browser.
+6.Load an example or enter your own Sudoku puzzle.
+7.Click Solve Sudoku.
 
-## 🔍 Validation
+🔍 Validation
 
 The application validates the Sudoku before sending it to the backend.
 
 It checks:
 
-- Rows
-- Columns
-- 3×3 boxes
+• Rows
+• Columns
+• 3×3 boxes
 
 Invalid puzzles display an appropriate validation message.
