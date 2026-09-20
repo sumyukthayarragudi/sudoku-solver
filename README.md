@@ -44,22 +44,23 @@ The algorithm:
 5. Recursively solves the remaining cells.
 6. Backtracks when a selected number leads to an invalid solution.
 
-## 📂 Project Structure
+## 📁 Project Structure
 
+```text
 SudokuSolverWeb
 │
 ├── src
 │   └── main
 │       ├── java
-│       │   └── com.sudoku.sudokusolver
-│       │       ├── controller
-│       │       │   ├── HomeController.java
-│       │       │   └── SudokuController.java
-│       │       │
-│       │       ├── solver
-│       │       │   └── SudokuSolver.java
-│       │       │
-│       │       └── SudokuSolverWebApplication.java
+│       │   ├── com.sudoku.sudokusolver
+│       │   │   └── SudokuSolverWebApplication.java
+│       │   │
+│       │   ├── controller
+│       │   │   ├── HomeController.java
+│       │   │   └── SudokuController.java
+│       │   │
+│       │   └── solver
+│       │       └── SudokuSolver.java
 │       │
 │       └── resources
 │           ├── static
@@ -70,8 +71,10 @@ SudokuSolverWeb
 │               └── index.html
 │
 ├── pom.xml
-└── README.md
-
+├── README.md
+└── .gitignore
+```
+```
 ## 🔄 Application Flow
 
 User
@@ -91,6 +94,7 @@ Backtracking Algorithm
 Solved Sudoku
 ↓
 Web Interface
+```
 
 ## ▶️ How to Run
 
